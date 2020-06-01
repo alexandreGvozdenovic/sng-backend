@@ -1,0 +1,272 @@
+[
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 48.8218201,
+          "lng": 2.3129148
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 48.8231056302915,
+            "lng": 2.314369130291502
+          },
+          "southwest": {
+            "lat": 48.8204076697085,
+            "lng": 2.311671169708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "id": "a4d3f198d43da548b3ff9ee47dbffe8304922c00",
+      "name": "MONOPRIX",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2160,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101880814296422111652\">Eric PETIT</a>"
+          ],
+          "photo_reference": "CmRaAAAAIwPp77l2u4H_KPbQ3B7fxtKfyQYenxbsXhqYPLYjGhAzPrC7d-ASmdGXMTqlbXPZBqZNVV31M9Q88GfBN0ZGclTabZwiChG8hiJaLAnAlOxBnOHJo_CJpCEiWjOI27xGEhD3t9-Iyo6HWMcm_1gJQvfCGhQKfvntR5h8i9hLimm4IK0Veuh6LQ",
+          "width": 3840
+        }
+      ],
+      "place_id": "ChIJbTai5VNw5kcR5qRBUGhUltM",
+      "plus_code": {
+        "compound_code": "R8C7+P5 Malakoff, France",
+        "global_code": "8FW4R8C7+P5"
+      },
+      "rating": 3.8,
+      "reference": "ChIJbTai5VNw5kcR5qRBUGhUltM",
+      "scope": "GOOGLE",
+      "types": [
+        "supermarket",
+        "grocery_or_supermarket",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 1631,
+      "vicinity": "6-12 Avenue Pierre Brossolette, Malakoff"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 48.82722219999999,
+          "lng": 2.3091667
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 48.82844358029149,
+            "lng": 2.310441830291502
+          },
+          "southwest": {
+            "lat": 48.82574561970849,
+            "lng": 2.307743869708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "id": "f2eda7d8848e74a845164c0eb2adf3edc0618162",
+      "name": "Carrefour Market",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 450,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105000510946609681191\">Carrefour Market</a>"
+          ],
+          "photo_reference": "CmRZAAAAOj11Xy1vU0yAZCKjJ2BqLJc6O7XBWbhsKNNRy7PhD2C9BKd59xlSUkmkBlOKJlXFdtD8tM3OW4-y3N4SA6ajcH3L9ofynriiRsVFviyUm6_D2946YrvOnMrEdRw-5XIpEhCHwkFDhz-xwydPh7P_ad5MGhRt_DawtJ4FozDpS4WXdNX4ft6T9Q",
+          "width": 800
+        }
+      ],
+      "place_id": "ChIJmyC-_E9w5kcRF2BUxLHAsos",
+      "plus_code": {
+        "compound_code": "R8G5+VM Paris, France",
+        "global_code": "8FW4R8G5+VM"
+      },
+      "rating": 3.4,
+      "reference": "ChIJmyC-_E9w5kcRF2BUxLHAsos",
+      "scope": "GOOGLE",
+      "types": [
+        "supermarket",
+        "bakery",
+        "grocery_or_supermarket",
+        "home_goods_store",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 378,
+      "vicinity": "43 Boulevard Brune, Paris"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 48.8264438,
+          "lng": 2.3121861
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 48.8277079802915,
+            "lng": 2.313493330291502
+          },
+          "southwest": {
+            "lat": 48.8250100197085,
+            "lng": 2.310795369708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "id": "8c938609936c714bd577cd820b896684290e1992",
+      "name": "AUCHAN (Brune)",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1081,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108599868043775435622\">Lassaad Belhamdia</a>"
+          ],
+          "photo_reference": "CmRaAAAAxgtc4ZLO9Fg0jRJKs-nHfzAwVF60-Ub16rw4AvVrlEzzDHxyU1GVyoXpP84ITmzb-q70nokRgF5vOaHRO1Y8gO2nI2M6k1RSpxFRFRaByyA9P9SMKPXXbF1HW4EofTMsEhC7dVLtsnkACJBv41Li1aXrGhT4NBnxs8q7DsAmVhg9K93MuiRFYw",
+          "width": 1920
+        }
+      ],
+      "place_id": "ChIJ37ig2VFw5kcR2A_B671f3zQ",
+      "plus_code": {
+        "compound_code": "R8G6+HV Paris, France",
+        "global_code": "8FW4R8G6+HV"
+      },
+      "rating": 3.6,
+      "reference": "ChIJ37ig2VFw5kcR2A_B671f3zQ",
+      "scope": "GOOGLE",
+      "types": [
+        "supermarket",
+        "grocery_or_supermarket",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 990,
+      "vicinity": "73 Boulevard Brune, Paris"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 48.82795000000001,
+          "lng": 2.31515
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 48.8292524802915,
+            "lng": 2.316567780291502
+          },
+          "southwest": {
+            "lat": 48.8265545197085,
+            "lng": 2.313869819708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "id": "ce5f231060caad86f74d35850c3f2a32b78f02bb",
+      "name": "Franprix",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 5333,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108830204275516525690\">Kévin Bki</a>"
+          ],
+          "photo_reference": "CmRaAAAAPPakdXnG_gKf712rJ_8QZWlKs7L2OKMHmQO7pQMZonjag0YgKWH0TBZ7sNsiFWDE-7Xe4B9HePDmcSp7gGiydem7Edrj1_JlrI8AKquewHUb4wW6IyxAK02BfhqTa7B4EhBmSpvcGfiMiWTvLNgMCtakGhRET3h1lP0ltdbxOGylP8ZeTuZKsw",
+          "width": 3000
+        }
+      ],
+      "place_id": "ChIJa_3L_bhx5kcRJolPnZHb9A4",
+      "plus_code": {
+        "compound_code": "R8H8+53 Paris, France",
+        "global_code": "8FW4R8H8+53"
+      },
+      "rating": 3.5,
+      "reference": "ChIJa_3L_bhx5kcRJolPnZHb9A4",
+      "scope": "GOOGLE",
+      "types": [
+        "supermarket",
+        "grocery_or_supermarket",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 46,
+      "vicinity": "94 Rue Didot, Paris"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 48.8294242,
+          "lng": 2.3086695
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 48.83072103029149,
+            "lng": 2.310074930291502
+          },
+          "southwest": {
+            "lat": 48.82802306970849,
+            "lng": 2.307376969708498
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/shopping-71.png",
+      "id": "b341c6707864d4425e925a5de35aa57a83a56929",
+      "name": "Franprix",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3264,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100797817560024923393\">Satoru Tada</a>"
+          ],
+          "photo_reference": "CmRaAAAANgzPhewJghiAcye8hAqni6I6P9z8EyRORq9XPLUX1nxyaYpeWu4fX8Jn4hev9xF139F1Xagve0tRguN0iLdjCKq4u9xAF_eIT9NgbwWqjJLbkn9cpSZAviWvpQ4SoZiJEhAlRj7nafnq2QLe_N79XSJGGhTaryoMbrA4ABEzQ53A4lPS26isdA",
+          "width": 2448
+        }
+      ],
+      "place_id": "ChIJN9GX79Zx5kcRGkqc-71sVvU",
+      "plus_code": {
+        "compound_code": "R8H5+QF Paris, France",
+        "global_code": "8FW4R8H5+QF"
+      },
+      "rating": 2.8,
+      "reference": "ChIJN9GX79Zx5kcRGkqc-71sVvU",
+      "scope": "GOOGLE",
+      "types": [
+        "supermarket",
+        "grocery_or_supermarket",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "user_ratings_total": 47,
+      "vicinity": "186 Rue Raymond Losserand, Paris"
+    }
+  ]
