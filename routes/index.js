@@ -33,15 +33,14 @@ router.post('/shake', function(req, res, next) {
     position = req.body.position;
   };
 
-  if(!req.body.type) {
-    type = ['bar', 'restaurant', 'supermarket']; // en prod remplacer supermarket par 'night_club'
+  let radius = req.body.radius ? req.body.radius : 1500;
+
+  if(req.body.type) {
+    type = [req.body.type, req.body.type, req.body.type];
   } else {
-    type = [req.body.type, req.body.type, req.body.type]
+    type = ['bar', 'restaurant', 'supermarket']; // en prod remplacer supermarket par 'night_club'
   };
   
-  let radius = req.body.radius ? req.body.radius : 500;
-
-  console.log('actual radius : ', radius)
   // var moment = new Date();
 
   // RECHERCHE DE BARS
@@ -51,32 +50,32 @@ router.post('/shake', function(req, res, next) {
   var resultat = JSON.parse(rawResult.body);
 
   // liste des bars à plus de 4 étoiles
-  var listeBars = [];
+  var listeTypeA = [];
   resultat.results.map((r, i) => {
     if (r.rating > 4) {
-      listeBars.push(r)
+      listeTypeA.push(r)
     }
   });
 
   // Random Place 1/3
-  // var listeBars = require('./fakeDatas/bars.json');
-  var randomBar = randomShake(listeBars);
+  // var randomTypeA = require('./fakeDatas/bars.json');
+  var randomTypeA = randomShake(listeTypeA);
 
   // Google Places Detail Request 1/3
-  var rawResultDetailA = request('GET', `https://maps.googleapis.com/maps/api/place/details/json?key=${gPAPIkey}&language=fr&place_id=${randomBar.place_id}&fields:review`);
+  var rawResultDetailA = request('GET', `https://maps.googleapis.com/maps/api/place/details/json?key=${gPAPIkey}&language=fr&place_id=${randomTypeA.place_id}&fields:review`);
   var resultatDetailA = JSON.parse(rawResultDetailA.body);
 
   // Google Places Photo Request 1/3
-  var photoRefA = randomBar.photos[0].photo_reference;
+  var photoRefA = randomTypeA.photos[0].photo_reference;
   var rawPhotoResultA = request('GET', `https://maps.googleapis.com/maps/api/place/photo?key=${gPAPIkey}&maxwidth=400&photo_reference=${photoRefA}`);
 
   //Objet résultat pour Front 1
   var suggestionA = {
-    place_id:randomBar.place_id,
-    nom:randomBar.name,
-    coords:randomBar.geometry.location,
-    adresse:randomBar.vicinity,
-    rating:randomBar.rating,
+    place_id:randomTypeA.place_id,
+    nom:randomTypeA.name,
+    coords:randomTypeA.geometry.location,
+    adresse:randomTypeA.vicinity,
+    rating:randomTypeA.rating,
     reviews:[resultatDetailA.result.reviews[0].text, resultatDetailA.result.reviews[1].text, resultatDetailA.result.reviews[2].text],
     photo:rawPhotoResultA.url
   }
@@ -88,32 +87,32 @@ router.post('/shake', function(req, res, next) {
   resultat = JSON.parse(rawResult.body);
 
   // liste des restaurants à plus de 4 étoiles
-  var listeRestaurants = [];
+  var listeTypeB = [];
   resultat.results.map((r, i) => {
-    if (r.rating > 4) {
-      listeRestaurants.push(r)
+    if (r.rating > 3) {
+      listeTypeB.push(r)
     }
   });
 
   // Random Place 2/3
-  // var listeRestaurants = require('./fakeDatas/restaurants.json');
-  var randomRestaurant = randomShake(listeRestaurants);
+  // var randomTypeB = require('./fakeDatas/restaurants.json');
+  var randomTypeB = randomShake(listeTypeB);
 
   // Google Places Detail Request 2/3
-  var rawResultDetailB = request('GET', `https://maps.googleapis.com/maps/api/place/details/json?key=${gPAPIkey}&language=fr&place_id=${randomRestaurant.place_id}&fields:review`);
+  var rawResultDetailB = request('GET', `https://maps.googleapis.com/maps/api/place/details/json?key=${gPAPIkey}&language=fr&place_id=${randomTypeB.place_id}&fields:review`);
   var resultatDetailB = JSON.parse(rawResultDetailB.body);
 
   // Google Places Photo Request 2/3
-  var photoRefB = randomRestaurant.photos[0].photo_reference;
+  var photoRefB = randomTypeB.photos[0].photo_reference;
   var rawPhotoResultB = request('GET', `https://maps.googleapis.com/maps/api/place/photo?key=${gPAPIkey}&maxwidth=400&photo_reference=${photoRefB}`);
 
   //Objet résultat pour Front 2
   var suggestionB = {
-    place_id:randomRestaurant.place_id,
-    nom:randomRestaurant.name,
-    coords:randomRestaurant.geometry.location,
-    adresse:randomRestaurant.vicinity,
-    rating:randomRestaurant.rating,
+    place_id:randomTypeB.place_id,
+    nom:randomTypeB.name,
+    coords:randomTypeB.geometry.location,
+    adresse:randomTypeB.vicinity,
+    rating:randomTypeB.rating,
     reviews:[resultatDetailB.result.reviews[0].text, resultatDetailB.result.reviews[1].text, resultatDetailB.result.reviews[2].text],
     photo:rawPhotoResultB.url
   }
@@ -125,32 +124,32 @@ router.post('/shake', function(req, res, next) {
   resultat = JSON.parse(rawResult.body);
 
   // liste des clubs à plus de 4 étoiles
-  var listeClubs = [];
+  var listeTypeC = [];
   resultat.results.map((r, i) => {
     if (r.rating > 0) {
-      listeClubs.push(r)
+      listeTypeC.push(r)
     }
   });
 
   // Random Place 3/3
-  // var listeClubs = require('./fakeDatas/clubs.json');
-  var randomClub = randomShake(listeClubs);
+  // var randomTypeC = require('./fakeDatas/clubs.json');
+  var randomTypeC = randomShake(listeTypeC);
 
   // Google Places Detail Request 3/3
-  var rawResultDetailC = request('GET', `https://maps.googleapis.com/maps/api/place/details/json?key=${gPAPIkey}&language=fr&place_id=${randomClub.place_id}&fields:review`);
+  var rawResultDetailC = request('GET', `https://maps.googleapis.com/maps/api/place/details/json?key=${gPAPIkey}&language=fr&place_id=${randomTypeC.place_id}&fields:review`);
   var resultatDetailC = JSON.parse(rawResultDetailC.body);
 
   // Google Places Photo Request 2/3
-  var photoRefC = randomRestaurant.photos[0].photo_reference;
+  var photoRefC = randomTypeC.photos[0].photo_reference;
   var rawPhotoResultC = request('GET', `https://maps.googleapis.com/maps/api/place/photo?key=${gPAPIkey}&maxwidth=400&photo_reference=${photoRefC}`);
 
   //Objet résultat pour Front 3
   var suggestionC = {
-    place_id:randomClub.place_id,
-    nom:randomClub.name,
-    coords:randomClub.geometry.location,
-    adresse:randomClub.vicinity,
-    rating:randomClub.rating,
+    place_id:randomTypeC.place_id,
+    nom:randomTypeC.name,
+    coords:randomTypeC.geometry.location,
+    adresse:randomTypeC.vicinity,
+    rating:randomTypeC.rating,
     reviews:[resultatDetailC.result.reviews[0].text, resultatDetailC.result.reviews[1].text, resultatDetailC.result.reviews[2].text],
     photo:rawPhotoResultC.url
   }
