@@ -2,8 +2,8 @@ var express = require('express');
 var router = express.Router();
 var request = require('sync-request');
 const {quartiers} = require('../public/javascripts/quartiers')
+const {testOpen} = require('../public/javascripts/testOpen')
 
-console.log(quartiers);
 
 // Google Places API key
 var gPAPIkey = 'AIzaSyByBUDqPZi14gp-f3fhYOaolaBJNjj5q7E';
@@ -29,8 +29,6 @@ router.post('/shake', function(req, res, next) {
   // Valeurs de recherche par défaut
   let position;
   let type;
-  // var moment = new Date();
-
 
   if(!req.body.position) {
     res.json({status:'echec', message:'Vous devez choisir un lieu pour sortir'})
@@ -39,6 +37,8 @@ router.post('/shake', function(req, res, next) {
   };
 
   let radius = req.body.radius ? req.body.radius : 1500;
+  let moment = req.body.moment ? new Date(req.body.moment) : new Date();
+
 
   if(req.body.type) {
     console.log('je passe dans la partie userType')
@@ -47,13 +47,17 @@ router.post('/shake', function(req, res, next) {
     var rawResult = request('GET', `https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=${gPAPIkey}&location=${position}&radius=${radius}&type=${type}`);
     var resultat = JSON.parse(rawResult.body);
 
+    console.log(resultat.results[0].opening_hours.open_now)
+    resultat.results[0].opening_hours.open_now ? console.log('putain de true') : console.log('putain de false') 
+
     // liste des lieux de type userType à plus de 4 étoiles
     var listeUserType = [];
     resultat.results.map((r, i) => {
-      if (r.rating > 4) {
+      if (r.rating > 4 ) {
         listeUserType.push(r)
       }
     });
+
     // Random Places x 3
     var randomUserType = []
     var a = randomShake(listeUserType);
@@ -76,7 +80,7 @@ router.post('/shake', function(req, res, next) {
       // Google Places Detail Request 1/3
       var rawResultDetail = request('GET', `https://maps.googleapis.com/maps/api/place/details/json?key=${gPAPIkey}&language=fr&place_id=${p.place_id}&fields:review`);
       var resultatDetail = JSON.parse(rawResultDetail.body);
-  
+
       // Google Places Photo Request 1/3
       var photoRef = p.photos[0].photo_reference;
       var rawPhotoResult = request('GET', `https://maps.googleapis.com/maps/api/place/photo?key=${gPAPIkey}&maxwidth=400&photo_reference=${photoRef}`);
@@ -87,7 +91,24 @@ router.post('/shake', function(req, res, next) {
         coords:p.geometry.location,
         adresse:p.vicinity,
         rating:p.rating,
-        reviews:[resultatDetail.result.reviews[0].text, resultatDetail.result.reviews[1].text, resultatDetail.result.reviews[2].text],
+        isOpen:resultatDetail.result.opening_hours.open_now,
+        openingHours:resultatDetail.result.opening_hours.weekday_text,
+        reviews:[{
+          auteur:resultatDetail.result.reviews[0].author_name,
+          avatar:resultatDetail.result.reviews[0].profile_photo_url,
+          note:resultatDetail.result.reviews[0].rating,
+          texte:resultatDetail.result.reviews[0].text,
+        },{
+          auteur:resultatDetail.result.reviews[1].author_name,
+          avatar:resultatDetail.result.reviews[1].profile_photo_url,
+          note:resultatDetail.result.reviews[1].rating,
+          texte:resultatDetail.result.reviews[1].text,
+        },{
+          auteur:resultatDetail.result.reviews[2].author_name,
+          avatar:resultatDetail.result.reviews[2].profile_photo_url,
+          note:resultatDetail.result.reviews[2].rating,
+          texte:resultatDetail.result.reviews[2].text,
+        }],
         photo:rawPhotoResult.url
       })
     });
@@ -106,16 +127,16 @@ router.post('/shake', function(req, res, next) {
     var rawResult = request('GET', `https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=${gPAPIkey}&location=${position}&radius=${radius}&type=${type[0]}`);
     var resultat = JSON.parse(rawResult.body);
 
-    // liste des bars à plus de 4 étoiles
+    // liste des lieux de type A à plus de 4 étoiles
     var listeTypeA = [];
     resultat.results.map((r, i) => {
-      if (r.rating > 4) {
+      if (r.rating > 4 ) {
         listeTypeA.push(r)
       }
     });
 
     // Random Place 1/3
-    // var randomTypeA = require('./fakeDatas/bars.json');
+    // var randomTypeA = require('../public/files/fakeDatas/bars.json');
     var randomTypeA = randomShake(listeTypeA);
 
     // Google Places Detail Request 1/3
@@ -134,16 +155,16 @@ router.post('/shake', function(req, res, next) {
     rawResult = request('GET', `https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=${gPAPIkey}&location=${position}&radius=${radius}&type=${type[1]}`);
     resultat = JSON.parse(rawResult.body);
 
-    // liste des restaurants à plus de 4 étoiles
+    // liste des lieux de type B à plus de 4 étoiles
     var listeTypeB = [];
     resultat.results.map((r, i) => {
-      if (r.rating > 3) {
+      if (r.rating > 4 ) {
         listeTypeB.push(r)
       }
     });
 
     // Random Place 2/3
-    // var randomTypeB = require('./fakeDatas/restaurants.json');
+    // var randomTypeB = require('../public/files/fakeDatas/restaurants.json');
     var randomTypeB = randomShake(listeTypeB);
 
     // Google Places Detail Request 2/3
@@ -162,16 +183,16 @@ router.post('/shake', function(req, res, next) {
     rawResult = request('GET', `https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=${gPAPIkey}&location=${position}&radius=${radius}&type=${type[2]}`);
     resultat = JSON.parse(rawResult.body);
 
-    // liste des clubs à plus de 4 étoiles
+    // liste des lieux de type C à plus de 4 étoiles
     var listeTypeC = [];
     resultat.results.map((r, i) => {
-      if (r.rating > 0) {
+      if (r.rating > 4 ) {
         listeTypeC.push(r)
       }
     });
 
     // Random Place 3/3
-    // var randomTypeC = require('./fakeDatas/clubs.json');
+    // var randomTypeC = require('../public/files/fakeDatas/clubs.json');
     var randomTypeC = randomShake(listeTypeC);
 
     // Google Places Detail Request 3/3
@@ -189,8 +210,25 @@ router.post('/shake', function(req, res, next) {
       coords:randomTypeA.geometry.location,
       adresse:randomTypeA.vicinity,
       rating:randomTypeA.rating,
-      reviews:[resultatDetailA.result.reviews[0].text, resultatDetailA.result.reviews[1].text, resultatDetailA.result.reviews[2].text],
-      photo:rawPhotoResultA.url
+      isOpen:resultatDetailA.result.opening_hours.open_now,
+      openingHours:resultatDetailA.result.opening_hours.weekday_text,
+      reviews:[{
+        auteur:resultatDetailA.result.reviews[0].author_name,
+        avatar:resultatDetailA.result.reviews[0].profile_photo_url,
+        note:resultatDetailA.result.reviews[0].rating,
+        texte:resultatDetailA.result.reviews[0].text,
+      },{
+        auteur:resultatDetailA.result.reviews[1].author_name,
+        avatar:resultatDetailA.result.reviews[1].profile_photo_url,
+        note:resultatDetailA.result.reviews[1].rating,
+        texte:resultatDetailA.result.reviews[1].text,
+      },{
+        auteur:resultatDetailA.result.reviews[2].author_name,
+        avatar:resultatDetailA.result.reviews[2].profile_photo_url,
+        note:resultatDetailA.result.reviews[2].rating,
+        texte:resultatDetailA.result.reviews[2].text,
+      }],
+    photo:rawPhotoResultA.url
     }
 
     //Objet résultat pour Front 2
@@ -200,8 +238,25 @@ router.post('/shake', function(req, res, next) {
       coords:randomTypeB.geometry.location,
       adresse:randomTypeB.vicinity,
       rating:randomTypeB.rating,
-      reviews:[resultatDetailB.result.reviews[0].text, resultatDetailB.result.reviews[1].text, resultatDetailB.result.reviews[2].text],
-      photo:rawPhotoResultB.url
+      isOpen:resultatDetailB.result.opening_hours.open_now,
+      openingHours:resultatDetailB.result.opening_hours.weekday_text,
+      reviews:[{
+        auteur:resultatDetailB.result.reviews[0].author_name,
+        avatar:resultatDetailB.result.reviews[0].profile_photo_url,
+        note:resultatDetailB.result.reviews[0].rating,
+        texte:resultatDetailB.result.reviews[0].text,
+      },{
+        auteur:resultatDetailB.result.reviews[1].author_name,
+        avatar:resultatDetailB.result.reviews[1].profile_photo_url,
+        note:resultatDetailB.result.reviews[1].rating,
+        texte:resultatDetailB.result.reviews[1].text,
+      },{
+        auteur:resultatDetailB.result.reviews[2].author_name,
+        avatar:resultatDetailB.result.reviews[2].profile_photo_url,
+        note:resultatDetailB.result.reviews[2].rating,
+        texte:resultatDetailB.result.reviews[2].text,
+      }],
+    photo:rawPhotoResultB.url
     }
 
     //Objet résultat pour Front 3
@@ -211,8 +266,25 @@ router.post('/shake', function(req, res, next) {
       coords:randomTypeC.geometry.location,
       adresse:randomTypeC.vicinity,
       rating:randomTypeC.rating,
-      reviews:[resultatDetailC.result.reviews[0].text, resultatDetailC.result.reviews[1].text, resultatDetailC.result.reviews[2].text],
-      photo:rawPhotoResultC.url
+      isOpen:resultatDetailC.result.opening_hours.open_now,
+      openingHours:resultatDetailC.result.opening_hours.weekday_text,
+      reviews:[{
+        auteur:resultatDetailC.result.reviews[0].author_name,
+        avatar:resultatDetailC.result.reviews[0].profile_photo_url,
+        note:resultatDetailC.result.reviews[0].rating,
+        texte:resultatDetailC.result.reviews[0].text,
+      },{
+        auteur:resultatDetailC.result.reviews[1].author_name,
+        avatar:resultatDetailC.result.reviews[1].profile_photo_url,
+        note:resultatDetailC.result.reviews[1].rating,
+        texte:resultatDetailC.result.reviews[1].text,
+      },{
+        auteur:resultatDetailC.result.reviews[2].author_name,
+        avatar:resultatDetailC.result.reviews[2].profile_photo_url,
+        note:resultatDetailC.result.reviews[2].rating,
+        texte:resultatDetailC.result.reviews[2].text,
+      }],
+    photo:rawPhotoResultC.url
     }
     
     // Tableau total des suggestions à renvoyer en Front 
