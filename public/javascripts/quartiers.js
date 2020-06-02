@@ -15,4 +15,4 @@ quartiers = quartiers.sort((a,b) => {
     return 0;
 } );
 
-export default quartiers;
+exports.quartiers = quartiers

@@ -1,6 +1,9 @@
 var express = require('express');
 var router = express.Router();
 var request = require('sync-request');
+const {quartiers} = require('../public/javascripts/quartiers')
+
+console.log(quartiers);
 
 // Google Places API key
 var gPAPIkey = 'AIzaSyByBUDqPZi14gp-f3fhYOaolaBJNjj5q7E';
