@@ -1,0 +1,1522 @@
+[
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "b0062cec1c080672704523cd9166fcacdb072959",
+    "fields": {
+        "l_qu": "Quinze-Vingts",
+        "geom_x_y": [
+        48.8469159441,
+        2.37440162648
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.37440162648,
+        48.8469159441
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "41a5f4f57934f0d01f50ce638af21bf16aaf9425",
+    "fields": {
+        "l_qu": "Arts-et-Métiers",
+        "geom_x_y": [
+        48.8664702895,
+        2.35708313106
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.35708313106,
+        48.8664702895
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "b38e4f7b865ff38a04e1c820eb0f1790cba865fb",
+    "fields": {
+        "l_qu": "Archives",
+        "geom_x_y": [
+        48.8591924127,
+        2.36320505733
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.36320505733,
+        48.8591924127
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "c40e790dc438d1f421361a40ab3f8e76d00aa4a8",
+    "fields": {
+        "l_qu": "Faubourg-du-Roule",
+        "geom_x_y": [
+        48.8741355756,
+        2.30411880972
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.30411880972,
+        48.8741355756
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "e43bbf3675b90df6cafa05a01541fa368d007ac7",
+    "fields": {
+        "l_qu": "Monnaie",
+        "geom_x_y": [
+        48.8543844036,
+        2.34003537113
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.34003537113,
+        48.8543844036
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "54f229d9b4bb8426ad13c853e443c4728c34f375",
+    "fields": {
+        "l_qu": "Odéon",
+        "geom_x_y": [
+        48.8478006293,
+        2.33633882759
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.33633882759,
+        48.8478006293
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "4bd0d51d857a08136619d5dbce5d119dc4d4aeb1",
+    "fields": {
+        "l_qu": "Champs-Elysées",
+        "geom_x_y": [
+        48.8670744922,
+        2.30865168468
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.30865168468,
+        48.8670744922
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "d088d5e5042d724ac17b61f5b9b36264481caca7",
+    "fields": {
+        "l_qu": "Maison-Blanche",
+        "geom_x_y": [
+        48.8231278057,
+        2.35243314954
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.35243314954,
+        48.8231278057
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "53462361713bf4f022723cf471d8433ea0119e1d",
+    "fields": {
+        "l_qu": "Croulebarbe",
+        "geom_x_y": [
+        48.8337336761,
+        2.34767304607
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.34767304607,
+        48.8337336761
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "2072a331129fb1180f303b30ec222215a5d8f993",
+    "fields": {
+        "l_qu": "Batignolles",
+        "geom_x_y": [
+        48.8884815139,
+        2.31385616901
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.31385616901,
+        48.8884815139
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "78a6fa4b9eb30d23cc80003b7441db1cdfbb7cfa",
+    "fields": {
+        "l_qu": "Mail",
+        "geom_x_y": [
+        48.8680083374,
+        2.34469912743
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.34469912743,
+        48.8680083374
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "285086059cf67fcdcb81be5a39102a962445174d",
+    "fields": {
+        "l_qu": "Bonne-Nouvelle",
+        "geom_x_y": [
+        48.8671501183,
+        2.35008019041
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.35008019041,
+        48.8671501183
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "df087e446f78532f82a338012b143f7675b0a8d3",
+    "fields": {
+        "l_qu": "Gare",
+        "geom_x_y": [
+        48.8275274578,
+        2.37239773692
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.37239773692,
+        48.8275274578
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "e47e1889ff0825c9669238f9c9a98743873d3d7f",
+    "fields": {
+        "l_qu": "Clignancourt",
+        "geom_x_y": [
+        48.8916675911,
+        2.34597875459
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.34597875459,
+        48.8916675911
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "2fa930183bf35f7053e640c8c8c4bdacedae6545",
+    "fields": {
+        "l_qu": "Goutte-d'Or",
+        "geom_x_y": [
+        48.8921381876,
+        2.3555361633
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.3555361633,
+        48.8921381876
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "63f6594278530331b95442e4c45c7c9f246f8161",
+    "fields": {
+        "l_qu": "Rochechouart",
+        "geom_x_y": [
+        48.8798119198,
+        2.344861291
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.344861291,
+        48.8798119198
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "5bbf51e52621a1fbffee1dac9f2bff530c7e990a",
+    "fields": {
+        "l_qu": "Bercy",
+        "geom_x_y": [
+        48.8352090499,
+        2.38621008421
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.38621008421,
+        48.8352090499
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "6abb98d4c13c57e351d45c97975c9d412bba3680",
+    "fields": {
+        "l_qu": "Halles",
+        "geom_x_y": [
+        48.8622891081,
+        2.34489885831
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.34489885831,
+        48.8622891081
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "e0178ba4b811a3adcecdd438c09224743e25f24f",
+    "fields": {
+        "l_qu": "Folie-Méricourt",
+        "geom_x_y": [
+        48.8674031901,
+        2.37296482493
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.37296482493,
+        48.8674031901
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "d7fc2b0fb947374330fa5fb1b03d1d22c6e88aae",
+    "fields": {
+        "l_qu": "Salpêtrière",
+        "geom_x_y": [
+        48.8374058852,
+        2.36331863515
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.36331863515,
+        48.8374058852
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "83444fc12fcef6c694f4e99dd7b201044e6ebc12",
+    "fields": {
+        "l_qu": "Place-Vendôme",
+        "geom_x_y": [
+        48.8670185906,
+        2.32858166493
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.32858166493,
+        48.8670185906
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "4199a456fd168f403e57805c5b885a1ab111660d",
+    "fields": {
+        "l_qu": "Combat",
+        "geom_x_y": [
+        48.8786390757,
+        2.38012728183
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.38012728183,
+        48.8786390757
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "cd6ec23048274d45a2bbfe7fe72e158c4eda782f",
+    "fields": {
+        "l_qu": "Charonne",
+        "geom_x_y": [
+        48.854760283,
+        2.40743032824
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.40743032824,
+        48.854760283
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "7110c3c7dff50ebd35dc41463789b78343ad0469",
+    "fields": {
+        "l_qu": "Javel",
+        "geom_x_y": [
+        48.8390604011,
+        2.27807634692
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.27807634692,
+        48.8390604011
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "f8a71ea1cfedf4071018dc51ca657e7ed82dd795",
+    "fields": {
+        "l_qu": "Saint-Gervais",
+        "geom_x_y": [
+        48.8557186509,
+        2.35816233385
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.35816233385,
+        48.8557186509
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "a4d86debf75c5b77e43c62126c4b03a0ec771750",
+    "fields": {
+        "l_qu": "Saint-Thomas-d'Aquin",
+        "geom_x_y": [
+        48.8552632694,
+        2.32558765258
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.32558765258,
+        48.8552632694
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "8e4e354c0f5d1975eeb266b96bba07be71bb8e37",
+    "fields": {
+        "l_qu": "Porte-Saint-Denis",
+        "geom_x_y": [
+        48.873617661,
+        2.35228289495
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.35228289495,
+        48.873617661
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "4c78078d7588fe340206c456800dee513814fd5f",
+    "fields": {
+        "l_qu": "Saint-Germain-l'Auxerrois",
+        "geom_x_y": [
+        48.8606501352,
+        2.33491032928
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.33491032928,
+        48.8606501352
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "f26d1f43a3e1a5b0e39191a5b793e0d44043870a",
+    "fields": {
+        "l_qu": "Villette",
+        "geom_x_y": [
+        48.8876610888,
+        2.37446821213
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.37446821213,
+        48.8876610888
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "10c5545818e09beacaff49049e14e571ac404d5c",
+    "fields": {
+        "l_qu": "Arsenal",
+        "geom_x_y": [
+        48.851585175,
+        2.36476795387
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.36476795387,
+        48.851585175
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "58fa23024e085bacc731e75a792f92196f26e5a6",
+    "fields": {
+        "l_qu": "Jardin-des-Plantes",
+        "geom_x_y": [
+        48.8419401934,
+        2.35689388962
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.35689388962,
+        48.8419401934
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "e08badb46e9c0c5f539a4179e94b4148553aa84b",
+    "fields": {
+        "l_qu": "Porte-Saint-Martin",
+        "geom_x_y": [
+        48.8712446509,
+        2.36150364735
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.36150364735,
+        48.8712446509
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "1532da92ce5889ed7537efbb0115af39623ef544",
+    "fields": {
+        "l_qu": "Roquette",
+        "geom_x_y": [
+        48.8570640408,
+        2.38036406173
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.38036406173,
+        48.8570640408
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "3b5ae5590383eda40e7492f026020bfd4fa035b3",
+    "fields": {
+        "l_qu": "Picpus",
+        "geom_x_y": [
+        48.8303592424,
+        2.42882681508
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.42882681508,
+        48.8303592424
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "d1bcc8fe202a064d831bad32be5f2241b0bf223f",
+    "fields": {
+        "l_qu": "Plaisance",
+        "geom_x_y": [
+        48.8303170426,
+        2.31530493157
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.31530493157,
+        48.8303170426
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "07d0efa6ba9c4030e2d379ad164ef90bae1d8933",
+    "fields": {
+        "l_qu": "Sorbonne",
+        "geom_x_y": [
+        48.8490447659,
+        2.34574660019
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.34574660019,
+        48.8490447659
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "e9b88b6659259cbd409044bd48ad04b4548f0483",
+    "fields": {
+        "l_qu": "Saint-Georges",
+        "geom_x_y": [
+        48.8799343388,
+        2.33285019656
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.33285019656,
+        48.8799343388
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "3e9672d70da25bf1eb5d747e62dd37d1f8c7a621",
+    "fields": {
+        "l_qu": "Chaussée-d'Antin",
+        "geom_x_y": [
+        48.8735473802,
+        2.33226886887
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.33226886887,
+        48.8735473802
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "ce700f81b59b2ba16ef94142d804ebd4ba7de2c1",
+    "fields": {
+        "l_qu": "Palais-Royal",
+        "geom_x_y": [
+        48.8646599781,
+        2.33630891897
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.33630891897,
+        48.8646599781
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "82f5126938465df15fbb05f48b251fc85ffeddf0",
+    "fields": {
+        "l_qu": "Invalides",
+        "geom_x_y": [
+        48.8585149661,
+        2.31644474034
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.31644474034,
+        48.8585149661
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "1ad9775fdef17ea2aae1828196b87772a35638bd",
+    "fields": {
+        "l_qu": "Faubourg-Montmartre",
+        "geom_x_y": [
+        48.8739346918,
+        2.34325257947
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.34325257947,
+        48.8739346918
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "8ac898f7254fc13f3a31eb352c9d5105d8523053",
+    "fields": {
+        "l_qu": "Gaillon",
+        "geom_x_y": [
+        48.8693066381,
+        2.33343180766
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.33343180766,
+        48.8693066381
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "6691cf329c83a99eeb6d039dfc5419efe625c529",
+    "fields": {
+        "l_qu": "Amérique",
+        "geom_x_y": [
+        48.8816381673,
+        2.39544016662
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.39544016662,
+        48.8816381673
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "47609b3441a3e49c6e2afe50f47f1d69981461e4",
+    "fields": {
+        "l_qu": "Vivienne",
+        "geom_x_y": [
+        48.8691001998,
+        2.33946074375
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.33946074375,
+        48.8691001998
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "c27910e716f8b3c5c8b3567fac0461700660c3fa",
+    "fields": {
+        "l_qu": "Enfants-Rouges",
+        "geom_x_y": [
+        48.863887392,
+        2.36312330099
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.36312330099,
+        48.863887392
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "430bf34bae4916c6a4c8cac75ed2dfdbad4be4b9",
+    "fields": {
+        "l_qu": "Saint-Germain-des-Prés",
+        "geom_x_y": [
+        48.85528872,
+        2.33365686809
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.33365686809,
+        48.85528872
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "c10025aba11c4697f7f758ae7059ae1e55721c6a",
+    "fields": {
+        "l_qu": "Saint-Vincent-de-Paul",
+        "geom_x_y": [
+        48.8807352373,
+        2.35747081045
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.35747081045,
+        48.8807352373
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "d7dc0b9c4d9568165fcdf391a10bb611bc495819",
+    "fields": {
+        "l_qu": "Saint-Ambroise",
+        "geom_x_y": [
+        48.8623450235,
+        2.37611805592
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.37611805592,
+        48.8623450235
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "5abca8047b1859c8d641d188e90ed149b0c3888c",
+    "fields": {
+        "l_qu": "Bel-Air",
+        "geom_x_y": [
+        48.8379956461,
+        2.43317844196
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.43317844196,
+        48.8379956461
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "bd208bb745d661647298506baa5663bd9eebbe2c",
+    "fields": {
+        "l_qu": "Montparnasse",
+        "geom_x_y": [
+        48.837623096,
+        2.33178382289
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.33178382289,
+        48.837623096
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "ec1904f3494b5fefabf65d4a8a04bea04ad38a51",
+    "fields": {
+        "l_qu": "Plaine de Monceaux",
+        "geom_x_y": [
+        48.8850436914,
+        2.30290982465
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.30290982465,
+        48.8850436914
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "6362826c56514eaec38f36bac27f8d3d15040fa2",
+    "fields": {
+        "l_qu": "Europe",
+        "geom_x_y": [
+        48.8781476759,
+        2.3171746113
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.3171746113,
+        48.8781476759
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "a92a550ae4e786fe41359fc468d00dea14513fa4",
+    "fields": {
+        "l_qu": "Sainte-Marguerite",
+        "geom_x_y": [
+        48.852096507,
+        2.3887648336
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.3887648336,
+        48.852096507
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "b3fbef0d4570d5b3f9bd3236bbb97789201f3e89",
+    "fields": {
+        "l_qu": "Parc-de-Montsouris",
+        "geom_x_y": [
+        48.8234527716,
+        2.33707017986
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.33707017986,
+        48.8234527716
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "30d77654d36fbf7cac04d38af51c5d34c6c11f06",
+    "fields": {
+        "l_qu": "Saint-Lambert",
+        "geom_x_y": [
+        48.8342936284,
+        2.29691997445
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.29691997445,
+        48.8342936284
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "4c8a593e9c20a112fadc089651ba457e068261b1",
+    "fields": {
+        "l_qu": "Saint-Victor",
+        "geom_x_y": [
+        48.8476636355,
+        2.35409315338
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.35409315338,
+        48.8476636355
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "c922b85bd8b29317ac3320ad7e0b8eef9cdc3128",
+    "fields": {
+        "l_qu": "Madeleine",
+        "geom_x_y": [
+        48.871265493,
+        2.32005302865
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.32005302865,
+        48.871265493
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "f0f3c4956354a8e9e5eeb483366dd3081ce3bdd1",
+    "fields": {
+        "l_qu": "Saint-Fargeau",
+        "geom_x_y": [
+        48.8710347391,
+        2.40617153015
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.40617153015,
+        48.8710347391
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "ac218bee8883f5c458c887864dad9470005e5f29",
+    "fields": {
+        "l_qu": "Porte-Dauphine",
+        "geom_x_y": [
+        48.8717656343,
+        2.27191774047
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.27191774047,
+        48.8717656343
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "f1170058faf7301f470dcd3d9dcec3f19ee975c4",
+    "fields": {
+        "l_qu": "Grandes-Carrières",
+        "geom_x_y": [
+        48.8925777711,
+        2.33436308991
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.33436308991,
+        48.8925777711
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "a33e68b23cca67896979b453d650b5d29e7bf25f",
+    "fields": {
+        "l_qu": "Val-de-Grâce",
+        "geom_x_y": [
+        48.841684288,
+        2.34386092632
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.34386092632,
+        48.841684288
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "c09d3c216c5ec8dfbe70f9696ebf5b8831040339",
+    "fields": {
+        "l_qu": "Necker",
+        "geom_x_y": [
+        48.8427112503,
+        2.31077745364
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.31077745364,
+        48.8427112503
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "7f4e2ddb053283c33ba193f6e0b80a62a91801b4",
+    "fields": {
+        "l_qu": "Père-Lachaise",
+        "geom_x_y": [
+        48.863719484,
+        2.39527282076
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.39527282076,
+        48.863719484
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "68ff5dadc2162b0e039f73715397b6011824ae86",
+    "fields": {
+        "l_qu": "La Chapelle",
+        "geom_x_y": [
+        48.8940121696,
+        2.36438677903
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.36438677903,
+        48.8940121696
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "a69f1a28df15be495f47c1d57ee2a47c232623ce",
+    "fields": {
+        "l_qu": "Ecole-Militaire",
+        "geom_x_y": [
+        48.8503592615,
+        2.31103093627
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.31103093627,
+        48.8503592615
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "c81cbe6fafa11351647293ad0bb8c42366fe364a",
+    "fields": {
+        "l_qu": "Grenelle",
+        "geom_x_y": [
+        48.8501716555,
+        2.2918526427
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.2918526427,
+        48.8501716555
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "a3513423d69a238ac6d5b30bf18339da3846b27f",
+    "fields": {
+        "l_qu": "Auteuil",
+        "geom_x_y": [
+        48.8506223427,
+        2.25227690754
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.25227690754,
+        48.8506223427
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "ec2524a57da144531acf6cf61c39bb912efbf79e",
+    "fields": {
+        "l_qu": "Saint-Merri",
+        "geom_x_y": [
+        48.8585213723,
+        2.35166696714
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.35166696714,
+        48.8585213723
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "35866ee0ac1dcff531495ead9d6ba90afea2a600",
+    "fields": {
+        "l_qu": "Notre-Dame",
+        "geom_x_y": [
+        48.8528955862,
+        2.35277501212
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.35277501212,
+        48.8528955862
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "8e2ef646db62563e4aeeff17725cc9b3a85f3242",
+    "fields": {
+        "l_qu": "Gros-Caillou",
+        "geom_x_y": [
+        48.8582999039,
+        2.30154155569
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.30154155569,
+        48.8582999039
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "30eac957573eeeec98ed8add4d8657517c0ea59f",
+    "fields": {
+        "l_qu": "Sainte-Avoie",
+        "geom_x_y": [
+        48.862557245,
+        2.35485151825
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.35485151825,
+        48.862557245
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "57fbc66fe26432ee1854451c75aea0d4565a05d3",
+    "fields": {
+        "l_qu": "Hôpital-Saint-Louis",
+        "geom_x_y": [
+        48.87600829,
+        2.36812301789
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.36812301789,
+        48.87600829
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "8acdf315bb9ef8855fb6eec66d58c6f0fa2cfe95",
+    "fields": {
+        "l_qu": "Belleville",
+        "geom_x_y": [
+        48.8715312006,
+        2.38754923985
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.38754923985,
+        48.8715312006
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "b1756430581b918cffc63578c5ac60b176d093af",
+    "fields": {
+        "l_qu": "Ternes",
+        "geom_x_y": [
+        48.8811775503,
+        2.28996373812
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.28996373812,
+        48.8811775503
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "1f6a77f949c237ebb35f5cee43d1100d13741f0c",
+    "fields": {
+        "l_qu": "Notre-Dame-des-Champs",
+        "geom_x_y": [
+        48.846427594,
+        2.32735687823
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.32735687823,
+        48.846427594
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "4a9ed8eda619a1f115a0175b11857a74a3326029",
+    "fields": {
+        "l_qu": "Petit-Montrouge",
+        "geom_x_y": [
+        48.8266526255,
+        2.32643699922
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.32643699922,
+        48.8266526255
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "3e1d684f181c5626a224c045b71033015774651e",
+    "fields": {
+        "l_qu": "Pont-de-Flandre",
+        "geom_x_y": [
+        48.8955557746,
+        2.38477722927
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.38477722927,
+        48.8955557746
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "0a503738520593c54dae9cd79775825bd5c5871c",
+    "fields": {
+        "l_qu": "Muette",
+        "geom_x_y": [
+        48.8632745438,
+        2.2599358317
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.2599358317,
+        48.8632745438
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "c835ec01c1f85a1a785d693ce3313c2cf6376ae1",
+    "fields": {
+        "l_qu": "Chaillot",
+        "geom_x_y": [
+        48.8684336145,
+        2.29167904274
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.29167904274,
+        48.8684336145
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    },
+    {
+    "datasetid": "quartier_paris",
+    "recordid": "89f18b14af61df2834fd7087e5c0ca72c811cf79",
+    "fields": {
+        "l_qu": "Epinettes",
+        "geom_x_y": [
+        48.8949426538,
+        2.32111874371
+        ]
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+        2.32111874371,
+        48.8949426538
+        ]
+    },
+    "record_timestamp": "2020-06-01T10:00:55.271000+00:00"
+    }
+]
