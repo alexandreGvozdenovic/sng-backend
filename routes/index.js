@@ -265,7 +265,7 @@ router.post('/shake', function(req, res, next) {
     //Objet résultat pour Front 3
     var suggestionC = {
       place_id:randomTypeC.place_id,
-      type:type[1],
+      type:type[2],
       nom:randomTypeC.name,
       coords:randomTypeC.geometry.location,
       adresse:randomTypeC.vicinity,
