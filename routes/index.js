@@ -39,9 +39,11 @@ router.post('/shake', function(req, res, next) {
   let radius = req.body.radius ? req.body.radius : 1500;
   let moment = req.body.moment ? new Date(req.body.moment) : new Date();
 
-  if(req.body.type) {
+  if(req.body.type != '') {
     console.log('je passe dans la partie userType')
     type = req.body.type;
+    console.log('en back je reçois : position : ', position)
+    console.log('en back je reçois : radius : ', radius)
     console.log('en back je reçois : type : ', type)
 
     // Places Request
@@ -51,7 +53,7 @@ router.post('/shake', function(req, res, next) {
     // liste des lieux de type userType à plus de 4 étoiles
     var listeUserType = [];
     resultat.results.map((r, i) => {
-      if (r.rating > 4 ) {
+      if (r.rating > 1 ) {
         listeUserType.push(r)
       }
     });
