@@ -39,16 +39,14 @@ router.post('/shake', function(req, res, next) {
   let radius = req.body.radius ? req.body.radius : 1500;
   let moment = req.body.moment ? new Date(req.body.moment) : new Date();
 
-
   if(req.body.type) {
     console.log('je passe dans la partie userType')
-    type = req.body.type, req.body.type, req.body.type;
+    type = req.body.type;
+    console.log('en back je reçois : type : ', type)
+
     // Places Request
     var rawResult = request('GET', `https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=${gPAPIkey}&location=${position}&radius=${radius}&type=${type}`);
     var resultat = JSON.parse(rawResult.body);
-
-    console.log(resultat.results[0].opening_hours.open_now)
-    resultat.results[0].opening_hours.open_now ? console.log('putain de true') : console.log('putain de false') 
 
     // liste des lieux de type userType à plus de 4 étoiles
     var listeUserType = [];
@@ -77,16 +75,17 @@ router.post('/shake', function(req, res, next) {
 
     var suggestions = []
     randomUserType.map((p) => {
-      // Google Places Detail Request 1/3
+      // Google Places Detail Request pour chacune des 3 places
       var rawResultDetail = request('GET', `https://maps.googleapis.com/maps/api/place/details/json?key=${gPAPIkey}&language=fr&place_id=${p.place_id}&fields:review`);
       var resultatDetail = JSON.parse(rawResultDetail.body);
 
-      // Google Places Photo Request 1/3
+      // Google Places Photo Request pour chacune des 3 places
       var photoRef = p.photos[0].photo_reference;
       var rawPhotoResult = request('GET', `https://maps.googleapis.com/maps/api/place/photo?key=${gPAPIkey}&maxwidth=400&photo_reference=${photoRef}`);
 
       suggestions.push({
         place_id:p.place_id,
+        type:req.body.type,
         nom:p.name,
         coords:p.geometry.location,
         adresse:p.vicinity,
@@ -186,7 +185,7 @@ router.post('/shake', function(req, res, next) {
     // liste des lieux de type C à plus de 4 étoiles
     var listeTypeC = [];
     resultat.results.map((r, i) => {
-      if (r.rating > 4 ) {
+      if (r.rating > 3 ) {
         listeTypeC.push(r)
       }
     });
@@ -206,6 +205,7 @@ router.post('/shake', function(req, res, next) {
     //Objet résultat pour Front 1
     var suggestionA = {
       place_id:randomTypeA.place_id,
+      type:type[0],
       nom:randomTypeA.name,
       coords:randomTypeA.geometry.location,
       adresse:randomTypeA.vicinity,
@@ -234,6 +234,7 @@ router.post('/shake', function(req, res, next) {
     //Objet résultat pour Front 2
     var suggestionB = {
       place_id:randomTypeB.place_id,
+      type:type[1],
       nom:randomTypeB.name,
       coords:randomTypeB.geometry.location,
       adresse:randomTypeB.vicinity,
@@ -262,6 +263,7 @@ router.post('/shake', function(req, res, next) {
     //Objet résultat pour Front 3
     var suggestionC = {
       place_id:randomTypeC.place_id,
+      type:type[1],
       nom:randomTypeC.name,
       coords:randomTypeC.geometry.location,
       adresse:randomTypeC.vicinity,
