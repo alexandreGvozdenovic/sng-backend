@@ -16,6 +16,20 @@ function randomShake(liste) {
   return liste[random];
 }
 
+// Mettre en capital les initiales des noms
+const capitalize = (texte) => {
+    texte = texte.toLocaleLowerCase();
+    let mots = texte.split(' ');
+    let capWords = [];
+    mots.map(m => {
+        let capM = m[0].toLocaleUpperCase() + m.slice(1);
+        capWords.push(capM)
+    } )
+    let capTexte = capWords.join(' ');
+    return capTexte;
+  };
+
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
@@ -88,24 +102,24 @@ router.post('/shake', function(req, res, next) {
       suggestions.push({
         place_id:p.place_id,
         type:req.body.type,
-        nom:p.name,
+        nom:capitalize(p.name),
         coords:p.geometry.location,
         adresse:p.vicinity,
         rating:p.rating,
         isOpen:resultatDetail.result.opening_hours.open_now,
         openingHours:resultatDetail.result.opening_hours.weekday_text,
         reviews:[{
-          auteur:resultatDetail.result.reviews[0].author_name,
+          auteur:capitalize(resultatDetail.result.reviews[0].author_name),
           avatar:resultatDetail.result.reviews[0].profile_photo_url,
           note:resultatDetail.result.reviews[0].rating,
           texte:resultatDetail.result.reviews[0].text,
         },{
-          auteur:resultatDetail.result.reviews[1].author_name,
+          auteur:capitalize(resultatDetail.result.reviews[1].author_name),
           avatar:resultatDetail.result.reviews[1].profile_photo_url,
           note:resultatDetail.result.reviews[1].rating,
           texte:resultatDetail.result.reviews[1].text,
         },{
-          auteur:resultatDetail.result.reviews[2].author_name,
+          auteur:capitalize(resultatDetail.result.reviews[2].author_name),
           avatar:resultatDetail.result.reviews[2].profile_photo_url,
           note:resultatDetail.result.reviews[2].rating,
           texte:resultatDetail.result.reviews[2].text,
@@ -208,24 +222,24 @@ router.post('/shake', function(req, res, next) {
     var suggestionA = {
       place_id:randomTypeA.place_id,
       type:type[0],
-      nom:randomTypeA.name,
+      nom:capitalize(randomTypeA.name),
       coords:randomTypeA.geometry.location,
       adresse:randomTypeA.vicinity,
       rating:randomTypeA.rating,
       isOpen:resultatDetailA.result.opening_hours.open_now,
       openingHours:resultatDetailA.result.opening_hours.weekday_text,
       reviews:[{
-        auteur:resultatDetailA.result.reviews[0].author_name,
+        auteur:capitalize(resultatDetailA.result.reviews[0].author_name),
         avatar:resultatDetailA.result.reviews[0].profile_photo_url,
         note:resultatDetailA.result.reviews[0].rating,
         texte:resultatDetailA.result.reviews[0].text,
       },{
-        auteur:resultatDetailA.result.reviews[1].author_name,
+        auteur:capitalize(resultatDetailA.result.reviews[1].author_name),
         avatar:resultatDetailA.result.reviews[1].profile_photo_url,
         note:resultatDetailA.result.reviews[1].rating,
         texte:resultatDetailA.result.reviews[1].text,
       },{
-        auteur:resultatDetailA.result.reviews[2].author_name,
+        auteur:capitalize(resultatDetailA.result.reviews[2].author_name),
         avatar:resultatDetailA.result.reviews[2].profile_photo_url,
         note:resultatDetailA.result.reviews[2].rating,
         texte:resultatDetailA.result.reviews[2].text,
@@ -237,24 +251,24 @@ router.post('/shake', function(req, res, next) {
     var suggestionB = {
       place_id:randomTypeB.place_id,
       type:type[1],
-      nom:randomTypeB.name,
+      nom:capitalize(randomTypeB.name),
       coords:randomTypeB.geometry.location,
       adresse:randomTypeB.vicinity,
       rating:randomTypeB.rating,
       isOpen:resultatDetailB.result.opening_hours.open_now,
       openingHours:resultatDetailB.result.opening_hours.weekday_text,
       reviews:[{
-        auteur:resultatDetailB.result.reviews[0].author_name,
+        auteur:capitalize(resultatDetailB.result.reviews[0].author_name),
         avatar:resultatDetailB.result.reviews[0].profile_photo_url,
         note:resultatDetailB.result.reviews[0].rating,
         texte:resultatDetailB.result.reviews[0].text,
       },{
-        auteur:resultatDetailB.result.reviews[1].author_name,
+        auteur:capitalize(resultatDetailB.result.reviews[1].author_name),
         avatar:resultatDetailB.result.reviews[1].profile_photo_url,
         note:resultatDetailB.result.reviews[1].rating,
         texte:resultatDetailB.result.reviews[1].text,
       },{
-        auteur:resultatDetailB.result.reviews[2].author_name,
+        auteur:capitalize(resultatDetailB.result.reviews[2].author_name),
         avatar:resultatDetailB.result.reviews[2].profile_photo_url,
         note:resultatDetailB.result.reviews[2].rating,
         texte:resultatDetailB.result.reviews[2].text,
@@ -266,24 +280,24 @@ router.post('/shake', function(req, res, next) {
     var suggestionC = {
       place_id:randomTypeC.place_id,
       type:type[2],
-      nom:randomTypeC.name,
+      nom:capitalize(randomTypeC.name),
       coords:randomTypeC.geometry.location,
       adresse:randomTypeC.vicinity,
       rating:randomTypeC.rating,
       isOpen:resultatDetailC.result.opening_hours.open_now,
       openingHours:resultatDetailC.result.opening_hours.weekday_text,
       reviews:[{
-        auteur:resultatDetailC.result.reviews[0].author_name,
+        auteur:capitalize(resultatDetailC.result.reviews[0].author_name),
         avatar:resultatDetailC.result.reviews[0].profile_photo_url,
         note:resultatDetailC.result.reviews[0].rating,
         texte:resultatDetailC.result.reviews[0].text,
       },{
-        auteur:resultatDetailC.result.reviews[1].author_name,
+        auteur:capitalize(resultatDetailC.result.reviews[1].author_name),
         avatar:resultatDetailC.result.reviews[1].profile_photo_url,
         note:resultatDetailC.result.reviews[1].rating,
         texte:resultatDetailC.result.reviews[1].text,
       },{
-        auteur:resultatDetailC.result.reviews[2].author_name,
+        auteur:capitalize(resultatDetailC.result.reviews[2].author_name),
         avatar:resultatDetailC.result.reviews[2].profile_photo_url,
         note:resultatDetailC.result.reviews[2].rating,
         texte:resultatDetailC.result.reviews[2].text,
