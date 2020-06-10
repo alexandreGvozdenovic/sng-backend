@@ -50,7 +50,7 @@ router.post('/shake', function(req, res, next) {
     position = req.body.position;
   };
 
-  let radius = req.body.radius ? req.body.radius : 1500;
+  let radius = req.body.radius ? req.body.radius : 2000;
   let moment = req.body.moment ? new Date(req.body.moment) : new Date();
 
   if(req.body.type != '') {
@@ -67,7 +67,7 @@ router.post('/shake', function(req, res, next) {
     // liste des lieux de type userType à plus de 4 étoiles
     var listeUserType = [];
     resultat.results.map((r, i) => {
-      if (r.rating > 1 ) {
+      if (r.rating > 3.5 ) {
         listeUserType.push(r)
       }
     });
@@ -145,7 +145,7 @@ router.post('/shake', function(req, res, next) {
     // liste des lieux de type A à plus de 4 étoiles
     var listeTypeA = [];
     resultat.results.map((r, i) => {
-      if (r.rating > 4 ) {
+      if (r.rating > 3.5 ) {
         listeTypeA.push(r)
       }
     });
@@ -173,7 +173,7 @@ router.post('/shake', function(req, res, next) {
     // liste des lieux de type B à plus de 4 étoiles
     var listeTypeB = [];
     resultat.results.map((r, i) => {
-      if (r.rating > 4 ) {
+      if (r.rating > 3.5 ) {
         listeTypeB.push(r)
       }
     });
@@ -201,7 +201,7 @@ router.post('/shake', function(req, res, next) {
     // liste des lieux de type C à plus de 4 étoiles
     var listeTypeC = [];
     resultat.results.map((r, i) => {
-      if (r.rating > 3 ) {
+      if (r.rating > 3.5 ) {
         listeTypeC.push(r)
       }
     });
