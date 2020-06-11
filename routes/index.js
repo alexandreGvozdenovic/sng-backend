@@ -1,9 +1,11 @@
 var express = require('express');
 var router = express.Router();
 var request = require('sync-request');
-const {quartiers} = require('../public/javascripts/quartiers')
-const {testOpen} = require('../public/javascripts/testOpen')
+const {quartiers} = require('../public/javascripts/quartiers');
+const {testOpen} = require('../public/javascripts/testOpen');
+var descriptionBuild = require('../public/javascripts/descriptionBuild');
 
+console.log(descriptionBuild('night_club',3,2));
 
 // Google Places API key
 var gPAPIkey = 'AIzaSyByBUDqPZi14gp-f3fhYOaolaBJNjj5q7E';
@@ -106,6 +108,7 @@ router.post('/shake', function(req, res, next) {
         coords:p.geometry.location,
         adresse:p.vicinity,
         rating:p.rating,
+        description:descriptionBuild(req.body.type, p.price_level, p.rating),
         isOpen:resultatDetail.result.opening_hours.open_now,
         openingHours:resultatDetail.result.opening_hours.weekday_text,
         reviews:[{
@@ -132,7 +135,7 @@ router.post('/shake', function(req, res, next) {
   } else {
     console.log('je passe dans la partie defaultType')
 
-    type = ['bar', 'restaurant', 'supermarket']; // en prod remplacer supermarket par 'night_club'
+    type = ['bar', 'restaurant', 'night_club']; // en prod remplacer supermarket par 'night_club'
 
     ///////////////////////////////////
     // RECHERCHE DE TYPE CATEGORIE 1 //
@@ -226,6 +229,7 @@ router.post('/shake', function(req, res, next) {
       coords:randomTypeA.geometry.location,
       adresse:randomTypeA.vicinity,
       rating:randomTypeA.rating,
+      description:descriptionBuild(type[0], randomTypeA.price_level, randomTypeA.rating),
       isOpen:resultatDetailA.result.opening_hours.open_now,
       openingHours:resultatDetailA.result.opening_hours.weekday_text,
       reviews:[{
@@ -255,6 +259,7 @@ router.post('/shake', function(req, res, next) {
       coords:randomTypeB.geometry.location,
       adresse:randomTypeB.vicinity,
       rating:randomTypeB.rating,
+      description:descriptionBuild(type[1], randomTypeB.price_level, randomTypeB.rating),
       isOpen:resultatDetailB.result.opening_hours.open_now,
       openingHours:resultatDetailB.result.opening_hours.weekday_text,
       reviews:[{
@@ -284,6 +289,7 @@ router.post('/shake', function(req, res, next) {
       coords:randomTypeC.geometry.location,
       adresse:randomTypeC.vicinity,
       rating:randomTypeC.rating,
+      description:descriptionBuild(type[2], randomTypeC.price_level, randomTypeC.rating),
       isOpen:resultatDetailC.result.opening_hours.open_now,
       openingHours:resultatDetailC.result.opening_hours.weekday_text,
       reviews:[{
