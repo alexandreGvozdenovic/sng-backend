@@ -76,6 +76,9 @@ router.post('/shake', function(req, res, next) {
       }
     });
 
+    // filtre pour éviter les hôtels
+    // listeUserType = listeUserType.filter(p => p.types.includes('lodging') === false);
+
     // Random Places x 3
     var randomUserType = []
     var a = randomShake(listeUserType);
@@ -147,15 +150,15 @@ router.post('/shake', function(req, res, next) {
     var rawResult = request('GET', `https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=${gPAPIkey}&location=${position}&radius=${radius}&type=${type[0]}`);
     var resultat = JSON.parse(rawResult.body);
 
-    console.log('status code Place Request:',rawResult.statusCode);
-
     // liste des lieux de type A à plus de 4 étoiles
     var listeTypeA = [];
     resultat.results.map((r, i) => {
-      if (r.rating > 3.5 ) {
+      if (r.rating > 3.5) {
         listeTypeA.push(r)
       }
     });
+    // filtre pour éviter les hôtels
+    // listeTypeA = listeTypeA.filter(p => p.types.includes('lodging') === false);
 
     // Random Place 1/3
     // var randomTypeA = require('../public/files/fakeDatas/bars.json');
@@ -165,14 +168,9 @@ router.post('/shake', function(req, res, next) {
     var rawResultDetailA = request('GET', `https://maps.googleapis.com/maps/api/place/details/json?key=${gPAPIkey}&language=fr&place_id=${randomTypeA.place_id}&fields:review`);
     var resultatDetailA = JSON.parse(rawResultDetailA.body);
 
-    console.log('status code Places Detail Request 1/3 :',rawResultDetailA.statusCode);
-
-
     // Google Places Photo Request 1/3
     var photoRefA = randomTypeA.photos[0].photo_reference;
     var rawPhotoResultA = request('GET', `https://maps.googleapis.com/maps/api/place/photo?key=${gPAPIkey}&maxwidth=400&photo_reference=${photoRefA}`);
-
-    console.log('status code Places Photo Request 1/3 :',rawPhotoResultA.statusCode);
 
     ///////////////////////////////////
     // RECHERCHE DE TYPE CATEGORIE 2 //
@@ -182,9 +180,6 @@ router.post('/shake', function(req, res, next) {
     rawResult = request('GET', `https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=${gPAPIkey}&location=${position}&radius=${radius}&type=${type[1]}`);
     resultat = JSON.parse(rawResult.body);
 
-    console.log('status code Place Request:',rawResult.statusCode);
-
-
     // liste des lieux de type B à plus de 4 étoiles
     var listeTypeB = [];
     resultat.results.map((r, i) => {
@@ -193,6 +188,9 @@ router.post('/shake', function(req, res, next) {
       }
     });
 
+    // filtre pour éviter les hôtels
+    // listeTypeB = listeTypeB.filter(p => p.types.includes('lodging') === false);
+
     // Random Place 2/3
     // var randomTypeB = require('../public/files/fakeDatas/restaurants.json');
     var randomTypeB = randomShake(listeTypeB);
@@ -200,13 +198,10 @@ router.post('/shake', function(req, res, next) {
     // Google Places Detail Request 2/3
     var rawResultDetailB = request('GET', `https://maps.googleapis.com/maps/api/place/details/json?key=${gPAPIkey}&language=fr&place_id=${randomTypeB.place_id}&fields:review`);
     var resultatDetailB = JSON.parse(rawResultDetailB.body);
-    console.log('status code Places Detail Request 2/3:',rawResultDetailB.statusCode);
-
 
     // Google Places Photo Request 2/3
     var photoRefB = randomTypeB.photos[0].photo_reference;
     var rawPhotoResultB = request('GET', `https://maps.googleapis.com/maps/api/place/photo?key=${gPAPIkey}&maxwidth=400&photo_reference=${photoRefB}`);
-    console.log('status code Places Photo Request 2/3:',rawPhotoResultB.statusCode);
 
     ///////////////////////////////////
     // RECHERCHE DE TYPE CATEGORIE 3 //
@@ -216,9 +211,6 @@ router.post('/shake', function(req, res, next) {
     rawResult = request('GET', `https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=${gPAPIkey}&location=${position}&radius=${radius}&type=${type[2]}`);
     resultat = JSON.parse(rawResult.body);
 
-    console.log('status code Place Request:',rawResult.statusCode);
-
-
     // liste des lieux de type C à plus de 4 étoiles
     var listeTypeC = [];
     resultat.results.map((r, i) => {
@@ -227,6 +219,9 @@ router.post('/shake', function(req, res, next) {
       }
     });
 
+    // filtre pour éviter les hôtels
+    // listeTypeC = listeTypeC.filter(p => p.types.includes('lodging') === false);
+
     // Random Place 3/3
     // var randomTypeC = require('../public/files/fakeDatas/clubs.json');
     var randomTypeC = randomShake(listeTypeC);
@@ -234,13 +229,10 @@ router.post('/shake', function(req, res, next) {
     // Google Places Detail Request 3/3
     var rawResultDetailC = request('GET', `https://maps.googleapis.com/maps/api/place/details/json?key=${gPAPIkey}&language=fr&place_id=${randomTypeC.place_id}&fields:review`);
     var resultatDetailC = JSON.parse(rawResultDetailC.body);
-    console.log('status code Places Detail Request 3/3:',rawResultDetailC.statusCode);
-
 
     // Google Places Photo Request 2/3
     var photoRefC = randomTypeC.photos[0].photo_reference;
     var rawPhotoResultC = request('GET', `https://maps.googleapis.com/maps/api/place/photo?key=${gPAPIkey}&maxwidth=400&photo_reference=${photoRefC}`);
-    console.log('status code Places Photo Request 3/3:',rawPhotoResultC.statusCode);
 
     function formatNames(name) {
       if(name === 'night_club') { 
@@ -342,8 +334,6 @@ router.post('/shake', function(req, res, next) {
     
     // Tableau total des suggestions à renvoyer en Front 
     var suggestions = [suggestionA, suggestionB, suggestionC];
-    
-    console.log('les suggestions dans la partie defaultType : ', suggestions)
   };
 
 
