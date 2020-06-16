@@ -6,7 +6,7 @@ const {testOpen} = require('../public/javascripts/testOpen');
 var descriptionBuild = require('../public/javascripts/descriptionBuild');
 
 // Google Places API key
-var gPAPIkey = 'AIzaSyByBUDqPZi14gp-f3fhYOaolaBJNjj5q7E';
+var gPAPIkey = process.env.G_PLACES_API_KEY;
 
 // Shake donne un Nombre au hasard 
 function randomShake(liste) {
