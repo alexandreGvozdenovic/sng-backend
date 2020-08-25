@@ -6,10 +6,7 @@ Backend & API de l'application mobile Shake'n'Go. *(Projet de fin d'études)*
 - __Backend__ : Node.js (Express Framework)
 - __Extras__ : Google Places API
 
-
-## Features côté utilisateur
-- Consulter un catalogue de produit  
-- Ajouter en panier
-- Payer
+## Lien
+Lien vers le repository du frontend : https://github.com/alexandreGvozdenovic/sng-frontend
 
 
